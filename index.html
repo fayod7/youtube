@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assets/title.svg">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <main>
+        <section class="youtube">
+            <header class="header">
+                <nav class="navbar">
+                    <div class="logos">
+                    <button onclick="sideBar()" class="side">
+                        <img src="./assets/hamburger-menu.svg" alt="">
+                    </button>
+
+                    <a href="#" class="logo__link">
+                        <img src="./assets/logo.svg" alt="#">
+                    </a>
+                    </div>
+                    <aside class="sidebar">
+                         <div class="logos">
+                    <button onclick="sideBar()" class="side">
+                        <img src="./assets/hamburger-menu.svg" alt="">
+                    </button>
+
+                    <a href="#" class="logo__link">
+                        <img src="./assets/logo.svg" alt="#">
+                    </a>
+                    </div>
+                        <ul class="sidebar__collection">
+                            <li class="sidebar__item active">
+                                <img src="./assets/home.svg" alt="">
+                                <span>Home</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <img src="./assets/trending.svg" alt="">
+                                <span>Trending</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <img src="./assets/subscriptions.svg" alt="">
+                                <span>Subscriptions</span>
+                            </li>
+
+                        </ul>
+                    </aside>
+                
+                <div class="search__input">
+                    <div class="search__inp">
+                        <input placeholder="Search" type="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                   <button onclick="microShow()" class="micro">
+                     <i class="fa-solid fa-microphone" style="color: #000000;"></i>
+                   </button>
+                   <div class="micro__popup">
+                         <button onclick="microShow()" class="micro">
+                     <i class="fa-solid fa-microphone" style="color: #000000;"></i>
+                     </button>
+                     </div>
+                </div>
+                <div class="profile__details">
+                    <button onclick="createShow()" class="create">
+                        <img src="./assets/create.svg" alt="">
+                        <span>Create</span>
+                        <div class="stream">
+                            <ul class="stream__collection">
+
+                            <li class="stream__item">
+                                <img src="./assets/cloud-arrow-up-solid.svg" alt="">
+                                <span>Upload video</span>
+                            </li>
+
+                            <li class="stream__item">
+                                <img src="./assets/live.svg" alt="">
+                                <span>Go live</span>
+                            </li>
+
+                            <li class="stream__item">
+                                <img src="./assets/create.svg" alt="">
+                                <span>Create post</span>
+                            </li>
+
+                            </ul>
+                        </div>
+                    </button>
+                    <button onclick="notificationsShow()" class="notify">
+                        <i class="fa-solid fa-bell" style="color: #000000;"></i>
+                        <div class="notifications">
+                            <img src="./assets/notify.png" alt="">
+                        </div>
+                    </button>
+                    <button onclick="profileShow()" class="profile">F</button>
+                    <div class="profile__detail">
+                        <ul class="profile__collection">
+
+                               <li class="profile__item">
+                                <img src="./assets/account.svg" alt="">
+                                <span>Google Account</span>
+                            </li>
+                               <li class="profile__item">
+                                <img src="./assets/switch.svg" alt="">
+                                <span>Switch Account</span>
+                            </li>
+                               <li class="profile__item">
+                                <img src="./assets/sign-out.svg" alt="">
+                                <span>Sign out</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                </nav>
+            </header>
+
+            <div class="wrapper">
+                <div class="content">
+                    <div class="content__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CiN4WNhb--I?si=wWZZJA-rlyyFebtu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="content__btns">
+                        <button onclick="settingsShow()" class="settings">
+                            <img src="./assets/settings.svg" alt="">
+
+                            <div class="setting">
+                                <ul class="setting__collection">
+                                     <li class="setting__item">
+                                <img src="./assets/volume-high-solid.svg" alt="">
+                                <span>Stable volume</span>
+                                    </li>
+                                     <li class="setting__item">
+                                <img src="./assets/quality.svg" alt="">
+                                <span>Quality</span>
+                                    </li>
+                                     <li class="setting__item">
+                                <img src="./assets/snooze.svg" alt="">
+                                <span>Snooze</span>
+                                    </li>
+                                     <li class="setting__item">
+                                <img src="./assets/play-solid.svg" alt="">
+                                <span>Playback speed</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </button>
+                        <button onclick="shareShow()" class="share">
+                            <img src="./assets/share.svg" alt="">
+                            <div class="share-img">
+                                <img src="./assets/share-img.png" alt="">
+                            </div>
+                        </button>
+                        <button onclick="reportShow()" class="report">
+                            <img src="./assets/ellipsis-solid.svg" alt="">
+                            <div class="reports">
+                                <li class="reports__item">
+                                    <img src="./assets/flag-regular.svg" alt="">
+                                    <span>Report</span>
+                                </li>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="./assets/right.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<script src="./js/app.js"></script>
+</body>
+</html>
