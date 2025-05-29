@@ -205,7 +205,7 @@ img{
     transition: .2s ease-in;
     position: fixed;
     top: 60px;
-    left: 85%;
+    left: 80%;
     border-radius: 15px;
     border: 2px solid #808080;
     z-index: 70;
@@ -256,99 +256,5 @@ img{
     min-width: 1416px;
     min-height: 700px;
 }
-.content__btns{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-right: 100px;
-    gap: 15px;
-}
-.settings,
-.share,
-.report{
-     background: #ddd;
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
-}
-.setting{
-    width: 200px;
-    height: 180px;
-    opacity: 0;
-    pointer-events: none;
-    transition: .2s ease-in;
-    position: fixed;
-    top: 60%;
-    left: 60%;
-    border-radius: 15px;
-    border: 2px solid #808080;
-    z-index: 77;
-    background: #808080;
-    margin-top: 100px;
-}
-.setting.active{
-    pointer-events: auto;
-    opacity: 1;
-    margin-top: 0;
-}
-.setting__item{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 10px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-radius: 5px;
-    transition: .2s ease;
-    color: #fff;
-}
-.share-img{
-    width: 400px;
-    height: 400px;
-    opacity: 0;
-    pointer-events: none;
-    transition: .2s ease-in;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 15px;
-    z-index: 77;
-    margin-top: 100px;
-    border-radius: 10px;
-}
-.share-img.active{
-    pointer-events: auto;
-    opacity: 1;
-    margin-top: 0;
-}
-.reports{
-    width: 100px;
-    height: 30px;
-    opacity: 0;
-    pointer-events: none;
-    transition: .2s ease-in;
-    position: fixed;
-    top: 70%;
-    left: 70%;
-    margin-top: 100px;
-    color: #000;
-}
-.reports.active{
-    pointer-events: auto;
-    opacity: 1;
-    margin-top: 0;
-}
-.reports__item{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 10px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-radius: 5px;
-    color: #000;
-    background-color: #fff;
-}
+
+
